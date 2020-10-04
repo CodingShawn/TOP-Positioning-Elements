@@ -410,3 +410,33 @@ figcaption .highlight{
     justify-content: space-between;
     align-items: center;
 }
+
+aside {
+    grid-column-start: 3;
+    justify-self: center;
+
+}
+
+.editor-pick {
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    border-bottom: 1.25px rgb(226, 226, 226) solid;
+}
+
+.mini-article {
+    display: grid;
+    grid-template-columns: 75px 125px;
+    grid-template-rows: 75px;
+    grid-gap: 20px 10px;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+}
+
+.mini-article img {
+    width: 100%;
+}
+
+.mini-article p:hover {
+    text-decoration: underline;
+}
