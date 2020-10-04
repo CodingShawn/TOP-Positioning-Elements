@@ -256,4 +256,107 @@ figcaption span {
     border-width: 6px 0px 0px 6px;
 }
 
+.story {
+    grid-column-start: 2;
+}
 
+.story p {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-family: georgia,'times new roman',times,serif;
+}
+
+.story p a {
+    color: #326891;
+}
+
+.story p a:hover {
+    text-decoration: none;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+.infographic {
+    grid-column: 1 / span 3;
+    margin: 15px 0;
+}
+
+.info-title p {
+    font-size: 16px;
+}
+
+figcaption .highlight{
+    color: black;
+    font-size: 20px;
+}
+
+/* Positioning text within infographic */
+
+.infographic .infographic-positioning {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 11px;
+    margin-top: 10px;
+}
+
+.infographic img {
+    max-width: 100%;
+    grid-area: 1 / 1 / -1 / -1;
+}
+
+.info-text {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.the-universe {
+    grid-area: 2 / 1;
+}
+
+.not-enough-time {
+    grid-area: 2 / 2;
+}
+
+.distant-coffee {
+    grid-area: 2 / 3;
+}
+
+.coffee-everywhere {
+    grid-area: 2 / 4;
+}
+
+.still-not-enough {
+    grid-area: 4 / 1;
+}
+
+.inflation {
+    grid-area: 4 / 2;
+}
+
+.fluctuation {
+    grid-area: 4 / 3;
+}
+
+.expansion {
+    grid-area: 4 / 4;
+}
+
+.infographic footer {
+    font-family: georgia,times new roman,times,serif;
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.infographic footer::before {
+    width: 60px;
+    height: 1px;
+    background-color: black;
+    content: "";
+    display: block;
+    margin-bottom: 13px;
+}
