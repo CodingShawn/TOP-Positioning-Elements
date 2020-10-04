@@ -52,7 +52,7 @@ table {
 .container {
     display: grid;
     grid-template-rows: 42px 1fr;
-    grid-template-columns: 1fr 585px 1fr;
+    grid-template-columns: 1fr 945px 1fr;
 }
 
 .page-header {
@@ -124,3 +124,136 @@ table {
     background-color: rgb(50, 104, 145);
     transition: all 0.6s ease 0s;
 }
+
+.content {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: grid;
+    /* grid-template-rows: repeat(auto-fill, auto); */
+    grid-template-columns: 1fr 600px 1fr;
+}
+
+.title {
+    font-family: georgia,'times new roman',times,serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #121212;
+    grid-column-start: 2;
+    word-wrap: normal;
+}
+
+.main-photo {
+    grid-column: 1 / span 3;
+    width: 100%;
+}
+
+.main-photo img {
+    width: 100%;
+}
+
+figcaption {
+    grid-column: 1 / span 2;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    color: #666;
+    font-family: georgia,'times new roman',times,serif;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+figcaption span {
+    color: #888;
+    letter-spacing: 0.01em;
+}
+
+.info {
+    grid-column-start: 2;
+    color: #333;
+    font-family: helvetica,arial,sans-serif;
+    font-weight: 700;
+    font-size: 0.9375rem;
+}
+
+.info a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.info .author {
+    margin-bottom: 15px;
+}
+.info time {
+    font-weight: 500;
+    font-size: 0.8125rem;
+}
+
+.date-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social li {
+    padding: 10px 0;
+    margin-right: 16px;
+}
+
+.bubble {
+    background-color: #eee;
+    border: 1px #eee solid;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+}
+
+.bubble:hover {
+    background-color: white;
+}
+
+.save {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.speech-bubble {
+    background: transparent;
+    border: 1px rgb(102, 102, 102) solid;
+    border-radius: 4px;
+    padding: 4px;
+    position: relative;
+}
+
+.speech-bubble ::before {
+    content: "";
+    display: block;
+    bottom: -7px;
+    left: 15px;
+    width: 0px;
+    position: absolute;
+    border-color: rgb(102, 102, 102) transparent;
+    border-width: 6px 0px 0px 8px;
+    border-style: solid;
+}
+
+.speech-bubble ::after {
+    bottom: -6px;
+    content: "";
+    position: absolute;
+    display: block;
+    left: 16px;
+    width: 0px;
+    border-color: white transparent;
+    border-style: solid;
+    border-width: 6px 0px 0px 6px;
+}
+
+
