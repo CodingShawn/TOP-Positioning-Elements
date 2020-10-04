@@ -61,6 +61,9 @@ table {
     justify-content: space-between;
     font-family: 'Franklin Gothic Medium', helvetica,arial,sans-serif;
     padding: 4px 15px 2px 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .nav-links {
