@@ -52,7 +52,7 @@ table {
 .container {
     display: grid;
     grid-template-rows: 42px 1fr;
-    grid-template-columns: 1fr 945px 1fr;
+    grid-template-columns: 1fr 1200px 1fr;
 }
 
 .page-header {
@@ -129,8 +129,8 @@ table {
     grid-row-start: 2;
     grid-column-start: 2;
     display: grid;
-    /* grid-template-rows: repeat(auto-fill, auto); */
     grid-template-columns: 1fr 600px 1fr;
+    margin-top: 60px;
 }
 
 .title {
@@ -141,6 +141,7 @@ table {
     color: #121212;
     grid-column-start: 2;
     word-wrap: normal;
+    margin-bottom: 16px;
 }
 
 .main-photo {
@@ -161,6 +162,7 @@ figcaption {
     margin-top: 10px;
     margin-right: 20px;
     text-align: left;
+    margin-bottom: 43px;
 }
 
 figcaption span {
@@ -350,6 +352,7 @@ figcaption .highlight{
     color: rgb(51, 51, 51);
     font-size: 16px;
     margin-top: 24px;
+    margin-bottom: 15px;
 }
 
 .infographic footer::before {
@@ -359,4 +362,51 @@ figcaption .highlight{
     content: "";
     display: block;
     margin-bottom: 13px;
+}
+
+/* Continue with article styling */
+
+.video {
+    margin: 45px 0px;
+}
+
+.story .video {
+    width: 600px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 319px;
+}
+
+.video figcaption {
+    margin-right: 50px;
+}
+
+.article-photo {
+    margin: 43px 0;
+}
+
+.story footer p {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgb(102, 102, 102);
+}
+
+.story footer p a {
+    color: rgb(102, 102, 102);
+}
+
+.read-comments {
+    width: 330px;
+    padding: 5px 0px;
+    line-height: 1.5rem;
+    font-size: 0.8125rem;
+}
+
+.footer-positioning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
